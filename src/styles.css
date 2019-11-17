@@ -1,0 +1,90 @@
+/* Add application styles & imports to this file! */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+.sidenav {
+    background-color: #f1f1f1;
+    padding: 60px;
+    float:left;
+    height: 1500px
+}
+.form-check-label {
+    margin-left: 20px;
+    margin-bottom:20px;
+}
+.form-check-label  .checkmark-label-text{
+    margin-left: 5px;
+}
+
+input.largerCheckbox { 
+    transform : scale(1.5); 
+} 
+div.col-sm-9{
+    padding: 40px;
+}
+.font-grey {
+    color : rgb(160, 137, 137)
+}
+.card {
+   padding: 0px;
+   margin-bottom: 20px;
+   height: 95px;
+   border:2px dashed yellow;
+   outline:2px dashed #000;
+   outline-offset:-1px;
+}
+
+.card .card-body{
+    padding:0px;
+    display:flex;
+    font-weight: bold;
+}
+
+
+.card-right{
+    padding: 10px;
+    display:flex;
+    width:100%;
+}
+
+airline-logo-section img{
+    float : left;
+}
+.destination-section{
+    width: 70%;
+    margin-left:auto
+}
+
+.destination-section span.details{
+    margin-right: 5px;
+}
+
+.duration-section{
+    border:0 2px;
+    width:10%;
+    border-right:1px solid darkgray;
+    border-left:1px solid darkgray;
+    text-align: center
+}
+
+.price-section button{
+    border: orange 3px solid;
+    border-radius: 10%;
+    width: 120px;
+    color: orange
+}
+
+.price-section{
+    text-align:right;
+    width:20%;
+    font-size: 1.2em;
+    background-color: transparent;
+}
+.none{
+    display:none;
+}
+.block{
+    display: block;
+}

@@ -1,0 +1,40 @@
+
+ <div *ngIf="flightOption.showOption" class="card">
+              <div class="card-body">
+                <div class="airline-logo-section">
+                    <img style="max-height:100px; max-width:90px" src="{{flightOption.airlineLogUrl}}">
+              </div>
+  
+              <div class="card-right">
+  
+                    <div class="destination-section">
+                      <div class="airline">
+                        {{flightOption.airlineName}}
+                      </div>
+  
+                    <div>
+                      <span class="details">{{flightOption.departureTime.time}}</span>
+                      <span class="details">{{flightOption.departureTime.date}}</span>
+                      <span class="details font-grey">{{flightOption.departureAirportCode}}</span>
+                      <span class="details"> -------------------------------</span>
+                      <span class="details">{{flightOption.arrivalTime.time}}</span>
+                      <span class="details">{{flightOption.arrivalTime.date}}</span>
+                      <span class="details font-grey">{{flightOption.arrivalAirportCode}}</span>
+                    </div>
+  
+                   </div>
+  
+                
+                  <div class="duration-section">
+                     <div class="font-grey"> Duration</div>
+                      <div>{{flightOption.totalDuration}}</div>
+                  </div>
+  
+                  <div class="price-section">
+                     <div class="price">{{flightOption.price | currency}}</div>
+                      <button class="btn">View</button>
+                  </div>
+  
+                </div>
+              </div> 
+ </div>

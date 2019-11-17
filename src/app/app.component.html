@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="sidenav col-sm-3">
+        
+          <div>
+              <h3>Airlines</h3> 
+               <form [formGroup]="tripActionsForm">
+                  <div formGroupName="checkboxes">
+                          <div class="check-mark" *ngFor="let airline of tripActionsForm.get('checkboxes').value | keyvalue; let i = index">
+                              <label class="form-check-label font-grey">
+                                  <input class="form-check-input largerCheckbox" type="checkbox" [formControlName]="airline.key" [value]="airline.value" /> 
+                                  <span class="checkmark-label-text">{{ airline.key }}</span>
+                              </label> 
+                        </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+
+      <div class="col-sm-9">
+          <div *ngFor="let flight of availableFlightOptions" >
+              <app-flights-card [flightOption]="flight"></app-flights-card>
+          </div>
+     </div>
+  </div>
+</div>
